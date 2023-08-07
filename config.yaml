@@ -7,7 +7,7 @@ PROXIES:
   http: http://localhost:7890
   https: http://localhost:7890
 # 设置cookie 如果过期了需要更新
-COOKIE: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+COOKIE: koa:sess=eyJ1c2VySWQiOjE5MTg1MSwiX2V4cGlyZSI6MTcxNTc1Njk2NDEwNiwiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=n5zOK6zaUbOL9IERgzye146HZOU; _gid=GA1.2.527417110.1691378104; _ga=GA1.1.1816503288.1689836659; _ga_CZFVKMNT9J=GS1.1.1691378103.5.1.1691378540.0.0.0
 # 签到的URL 经过测试两个URL均可
 URL: https://glados.network/api/user/checkin
 #URL: https://glados.rocks/api/user/checkin
@@ -15,11 +15,11 @@ URL: https://glados.network/api/user/checkin
 
 ## 邮件报警有关 ##
 # 是否在签到失败时开启邮件报警 仅当该参数为 true 时后续参数才生效
-ENABLE_ALERT_MAIL: false
+ENABLE_ALERT_MAIL: true
 # 发送邮件的邮件地址 和接收邮箱的地址一致即可
-SENDER_EMAIL: xxxxxx@qq.com
+SENDER_EMAIL: yu3466@qq.com
 # 接收邮件的邮箱地址 默认支持qq邮箱 如果设置其他邮箱 请同时修改 SMTP_SERVER、SMTP_PORT、USERNAME、PASSWORD
-RECEIVER_EMAIL: xxxxx@qq.com
+RECEIVER_EMAIL: yu3466@qq.com
 # 邮件主题 可自定义
 SUBJECT: 【警告】glados网站签到异常报警
 # # 邮件内容 可自定义
@@ -28,6 +28,6 @@ SUBJECT: 【警告】glados网站签到异常报警
 SMTP_SERVER: smtp.qq.com
 SMTP_PORT: 587
 # 邮箱账号
-USERNAME: xxxxx@qq.com
+USERNAME: yu3466@qq.com
 # 邮箱授权码（注意：不是邮箱密码） 由邮箱服务方生成
-PASSWORD: xxxxxxxxxxxxxxxx
+PASSWORD: qfgxfmlrulpqdafb
